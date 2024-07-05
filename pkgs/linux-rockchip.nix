@@ -52,7 +52,13 @@ in with pkgs.linuxKernel; {
 
   linux_6_9 = pkgs.linuxPackages_6_9;
   linux_6_9_rockchip = packagesFor
-    (kernels.linux_6_9.override { structuredExtraConfig = kernelConfig; });
+    (kernels.linux_6_9.override {
+      kernelPatches = [{
+        name = "Set proper dma-names";
+        patch = ./dma-names.patch;
+      }];
+      structuredExtraConfig = kernelConfig;
+    });
 
   linux_6_9_pinetab = packagesFor (kernels.linux_6_9.override {
     argsOverride = {

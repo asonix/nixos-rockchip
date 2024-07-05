@@ -1,0 +1,36 @@
+diff --git a/arch/arm64/boot/dts/rockchip/rk3566-pinenote.dtsi b/arch/arm64/boot/dts/rockchip/rk3566-pinenote.dtsi
+index d899087bf0b5..ae2536c65a83 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3566-pinenote.dtsi
++++ b/arch/arm64/boot/dts/rockchip/rk3566-pinenote.dtsi
+@@ -674,6 +674,7 @@ &tsadc {
+ };
+ 
+ &uart1 {
++	dma-names = "tx", "rx";
+ 	pinctrl-0 = <&uart1m0_ctsn>, <&uart1m0_rtsn>, <&uart1m0_xfer>;
+ 	pinctrl-names = "default";
+ 	uart-has-rtscts;
+diff --git a/arch/arm64/boot/dts/rockchip/rk3566-quartz64-a.dts b/arch/arm64/boot/dts/rockchip/rk3566-quartz64-a.dts
+index 0b191d8462ad..37a1303d9a34 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3566-quartz64-a.dts
++++ b/arch/arm64/boot/dts/rockchip/rk3566-quartz64-a.dts
+@@ -738,6 +738,7 @@ &uart0 {
+ };
+ 
+ &uart1 {
++	dma-names = "tx", "rx";
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&uart1m0_xfer &uart1m0_ctsn &uart1m0_rtsn>;
+ 	status = "okay";
+diff --git a/arch/arm64/boot/dts/rockchip/rk3566-soquartz.dtsi b/arch/arm64/boot/dts/rockchip/rk3566-soquartz.dtsi
+index dd4e9c1893c6..e42c474ef4ad 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3566-soquartz.dtsi
++++ b/arch/arm64/boot/dts/rockchip/rk3566-soquartz.dtsi
+@@ -614,6 +614,7 @@ &tsadc {
+ };
+ 
+ &uart1 {
++	dma-names = "tx", "rx";
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&uart1m0_xfer &uart1m0_ctsn &uart1m0_rtsn>;
+ 	uart-has-rtscts;
