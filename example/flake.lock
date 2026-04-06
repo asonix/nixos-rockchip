@@ -34,11 +34,11 @@
     },
     "nixpkgsUnstable": {
       "locked": {
-        "lastModified": 1774106199,
-        "narHash": "sha256-US5Tda2sKmjrg2lNHQL3jRQ6p96cgfWh3J1QBliQ8Ws=",
+        "lastModified": 1774709303,
+        "narHash": "sha256-D3Q07BbIA2KnTcSXIqqu9P586uWxN74zNoCH3h2ESHg=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6c9a78c09ff4d6c21d0319114873508a6ec01655",
+        "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
         "type": "github"
       },
       "original": {
@@ -55,11 +55,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1774291348,
-        "narHash": "sha256-SZ8fDtNfhECp8RPbkgCkAwYQLtfWjq4xIYxDnzDVtt4=",
+        "lastModified": 1775307572,
+        "narHash": "sha256-C1Du+PzepefxHGvstQvPIyte8/2tOP1MFof+J0cP8A8=",
         "owner": "nabam",
         "repo": "nixos-rockchip",
-        "rev": "66ce91edccc52f4845f7f33769a3342bffd3d320",
+        "rev": "a3e339a17a6b8daaa2f56c70488ceb3cfe7d9c66",
         "type": "github"
       },
       "original": {
